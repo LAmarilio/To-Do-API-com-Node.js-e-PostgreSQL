@@ -30,25 +30,25 @@ API simples para gerenciar tarefas usando Node.js puro e banco de dados PostgreS
    ```
 
 2. Instale as dependências:
-  ```bash
+   ```bash
    npm install
-  ```
+   ```
 
 3. Configure o banco PostgreSQL e crie a tabela:
-  ```sql
-    CREATE TABLE tarefas (
-      id SERIAL PRIMARY KEY,
-      titulo TEXT NOT NULL,
-      concluida BOOLEAN DEFAULT false
-    );
-  ```
+   ```sql
+   CREATE TABLE tarefas (
+     id SERIAL PRIMARY KEY,
+     titulo TEXT NOT NULL,
+     concluida BOOLEAN DEFAULT false
+   );
+   ```
 
 4. Ajuste os dados de conexão no arquivo database.js.
 
 5. Inicie o servidor:
-  ```bash
-    node index.js
-  ```
+   ```bash
+   node index.js
+   ```
 
 ---
 
