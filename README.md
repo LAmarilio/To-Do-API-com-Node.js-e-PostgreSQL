@@ -43,7 +43,16 @@ API simples para gerenciar tarefas usando Node.js puro e banco de dados PostgreS
    );
    ```
 
-4. Ajuste os dados de conexão no arquivo database.js.
+4. No arquivo database.js, ajuste com seus dados:
+   ```js
+   const client = new Client({
+     user: 'postgres',
+     host: 'localhost',
+     database: 'tarefas',
+     password: 'sua_senha',
+     port: 5432,
+   });
+   ```
 
 5. Inicie o servidor:
    ```bash
